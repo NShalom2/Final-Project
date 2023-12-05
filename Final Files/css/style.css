@@ -1,0 +1,666 @@
+body {
+    margin: 0;
+    font-family: 'Nerko One', cursive;
+}
+
+header {
+    display: flex;
+    padding: 20px 5%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a img {
+    height: 80px;
+    margin-right: 20px;
+    padding: 0 200px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.menu > li {
+    margin: 0 20px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    font-size: 35px;
+    transition: color 0.3s;
+    color: white;
+}
+
+.menu > li > a:hover{
+    color: red;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.backgroundVideo {
+    width: 100%;
+}
+
+.textVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.backgroundVideoText h2 {
+    font-size: 56px;
+}
+
+.backgroundVideoText p {
+    padding: 20px;
+    font-size: 50px;
+}
+
+.container-1, .container-2, .container-3, .container-4, .container-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container-1 p, .container-2 p, .container-4 p, .container-5 p {
+    padding: 30px 250px;
+    text-align: center;
+}
+
+.container-1, .container-2, .container-3{
+    padding: 60px 400px;
+    height: 400px;
+}
+
+.container-4, .container-5{
+    padding: 30px 300px;
+}
+
+.container-1, .container-2, .container-3 p{
+    padding: 20px;
+    font-size: 40px;
+}
+
+.container-4, .container-5 {
+    flex-direction: column;
+}
+
+.container-4 p, .container-5 p {
+    font-size: 36px;
+}
+
+.container-1{
+    color: white;
+    background-color: #00A23A;
+}
+
+.container-2{
+    background-color: #F3DD38;
+}
+
+.container-3{
+    background-color: #C3A3CE;
+}
+
+.container-4{
+    background-color: #EF7D00;
+}
+
+.container-5{
+    background-color: #8DAFE2;
+}
+
+/* Updated button styles */
+.button-1 {
+    padding: 15px 30px;
+    font-family: 'Nerko One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button-2 {
+    padding: 15px 30px;
+    font-family: 'Nerko One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button-1:hover{
+    background-color: white;
+    color: black;
+}
+
+.button-2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Additional styles for the links within buttons */
+.button-1 a,
+.button-2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.button-1 a:hover{
+    color: black;
+}
+
+.button-2 a:hover {
+    color: white;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: black;
+    padding: 20px 5%;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links > li {
+    margin: 0 20px;
+}
+
+.footer-links > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    color: white;
+}
+
+.footer-links > li > a:hover{
+    color: red;
+}
+
+.logo-2 a {
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.copyright {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+/*Socials*/
+
+.socials{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.socials > a{
+    padding: 10px 20px;
+}
+
+.socials > a > img{
+    height: 40px;
+    fill: white;
+}
+
+
+/*Contact Form*/
+
+
+.contact-section {
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    border: 2px solid #fff;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact-form button:hover {
+    background-color: red;
+    color: #333;
+}
+
+/*Products Page*/
+
+.products-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.product-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product button:hover {
+    background-color: red;
+    color: #333;
+}
+
+/*About Page*/
+
+.centered-paragraphs p{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.mission,
+.vision {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.mission h3,
+.vision h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mission p,
+.vision p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/*Major viewports*/
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 600px;
+    }
+    header {
+        display: flex;
+        padding: 5px 1%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo a img {
+        height: 40px;
+        margin-right: 5px;
+        padding: 0 30px;
+    }
+    .menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0 35px;
+    }
+    .menu > li > a {
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.3s;
+        color: white;
+    }
+    .backgroundVideoText h2 {
+        font-size: 20px;
+    }
+    .backgroundVideoText p {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .container-1, .container-2, .container-3, .container-4, .container-5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .container-1 img, .container-2 img, .container-3 img, .container-4 img, .container-5 img{
+        height: 100px;
+    }
+
+    .container-1 p, .container-2 p, .container-4 p, .container-5 p {
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .container-1, .container-2, .container-3{
+        padding: 20px 40px;
+        height: 200px;
+    }
+
+    .container-4, .container-5{
+        padding: 15px 30px;
+    }
+
+    .container-1, .container-2, .container-3 p{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .container-4, .container-5{
+        padding: 15px 100px;
+    }
+    .container-4 p, .container-5 p {
+        font-size: 15px;
+    }
+    .button-1 {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .button-2 {
+        padding: 5px 10px;
+        font-family: 'Nerko One', cursive;
+        font-size: 10px;
+    }
+    .logo-2 a img {
+        height: 50px;
+        margin-right: 5px;
+        padding: 0 35px;
+    }
+    .footer-links > li {
+        margin: 0 3px;
+    }
+
+    .footer-links > li > a {
+        text-decoration: none;
+        font-size: 10px;
+        transition: color 0.3s;
+        color: white;
+    }
+    .socials > a{
+        padding: 5px 10px;
+    }
+
+    .socials > a > img{
+        height: 13px;
+        fill: white;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    centered-paragraphs p{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mission,
+    .vision {
+        max-width: 600px;
+        margin: 5px auto 30px;
+    }
+
+    .mission h3,
+    .vision h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .mission p,
+    .vision p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        width: 1014px;
+    }
+    header {
+        display: flex;
+        padding: 10px 3%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo a img {
+        height: 60px;
+        margin-right: 8px;
+        padding: 0 45px;
+    }
+    .menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0 45px;
+    }
+    .menu > li > a {
+        text-decoration: none;
+        font-size: 25px;
+        transition: color 0.3s;
+        color: white;
+    }
+    .backgroundVideoText h2 {
+        font-size: 30px;
+    }
+    .backgroundVideoText p {
+        padding: 25px;
+        font-size: 25px;
+    }
+    .container-1, .container-2, .container-3, .container-4, .container-5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .container-1 img, .container-2 img, .container-3 img, .container-4 img, .container-5 img{
+        height: 150px;
+    }
+
+    .container-1 p, .container-2 p, .container-4 p, .container-5 p {
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .container-1, .container-2, .container-3{
+        padding: 25px 50px;
+        height: 250px;
+    }
+
+    .container-4, .container-5{
+        padding: 20px 40px;
+    }
+
+    .container-1, .container-2, .container-3 p{
+        padding: 15px;
+        font-size: 30px;
+    }
+    .container-4, .container-5{
+        padding: 20px 150px;
+    }
+    .container-4 p, .container-5 p {
+        font-size: 30px;
+    }
+    .button-1 {
+        padding: 10px 15px;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .button-2 {
+        padding: 10px 20px;
+        font-family: 'Nerko One', cursive;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .logo-2 a img {
+        height: 60px;
+        margin-right: 10px;
+        padding: 0 40px;
+    }
+    .footer-links > li {
+        margin: 0 5px;
+    }
+
+    .footer-links > li > a {
+        text-decoration: none;
+        font-size: 25px;
+        transition: color 0.3s;
+        color: white;
+    }
+    .socials > a{
+        padding: 10px 20px;
+    }
+
+    .socials > a > img{
+        height: 25px;
+        fill: white;
+    }
+    .copyright {
+        font-size: 20px;
+    }
+    centered-paragraphs {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mission,
+    .vision {
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+
+    .mission h3,
+    .vision h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .mission p,
+    .vision p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
